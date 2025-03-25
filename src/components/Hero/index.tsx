@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Threads from "@/components/Threads";
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
+                    href="/"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     Let’s Build Together
@@ -28,6 +29,13 @@ const Hero = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="absolute w-full z-[-2] h-[500px] -bottom-[250px]">
+          <Threads
+            amplitude={2}
+            enableMouseInteraction={true}
+            color={[74, 108, 247]}
+          />
         </div>
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
