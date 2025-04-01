@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Threads from "@/components/Threads";
 
 const Hero = () => {
   return (
@@ -9,34 +8,42 @@ const Hero = () => {
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px]">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Build Smarter.<br />Grow Faster.<br />Think Ellvation.
-                </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  From concept to code, Ellvation helps you turn bold ideas into powerful digital products.
-                </p>
-                <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="/"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    Let’s Build Together
-                  </Link>
-                </div>
+          <div className="flex flex-wrap items-start">
+            <div className="w-8/12">
+              <h1 className="title">
+                Think Beyond.<br />Build Beyond.
+              </h1>
+              <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                From concept to code, PARALOGIK helps you turn bold ideas into powerful digital products.
+              </p>
+              <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <Link
+                  href="/"
+                  className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                >
+                  Let’s Build Together
+                </Link>
               </div>
+            </div>
+            <div className="w-4/12">
+              {/*<div style={{ width: '100%', height: '100%', position: 'relative' }}>
+                <Orb
+                  hoverIntensity={0.5}
+                  rotateOnHover={true}
+                  hue={0}
+                  forceHoverState={false}
+                />
+              </div>*/}
             </div>
           </div>
         </div>
-        <div className="absolute w-full z-[-2] h-[500px] -bottom-[250px]">
+        {/*<div className="absolute w-full z-[-2] h-[500px] -bottom-[250px]">
           <Threads
             amplitude={2}
             enableMouseInteraction={true}
             color={[74, 108, 247]}
           />
-        </div>
+        </div>*/}
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"

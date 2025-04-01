@@ -57,14 +57,14 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/ellvation_logo2.svg"
+                  src="/images/logo/paralogik_logo_light.svg"
                   alt="logo"
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
                 />
                 <Image
-                  src="/images/logo/ellvation_logo.svg"
+                  src="/images/logo/paralogik_logo_dark.svg"
                   alt="logo"
                   width={140}
                   height={30}

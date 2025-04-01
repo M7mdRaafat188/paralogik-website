@@ -4,8 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { GeistSans } from "geist/font/sans";
-import "../styles/index.css";
-
+import "../styles/index.scss";
 
 export default function RootLayout({
   children,
@@ -20,7 +19,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${GeistSans.className}`}>
+      <body className={`bg-[#F8F9FA] dark:bg-[#1C1C1E] ${GeistSans.className}`}>
         <Providers>
           <Header />
           {children}

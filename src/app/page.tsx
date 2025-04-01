@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import SectionTitle from "@/components/Common/SectionTitle";
 import SingleService from "@/components/Features/SingleService";
 import { SERVICES } from "@/_data/services";
+import Button from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Elevate Your Vision with Custom Digital Solutions",
@@ -22,8 +23,10 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
+
       <Hero />
 
+      {/* Services */}
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle title="We Build Solutions That Elevates You" center>
@@ -39,6 +42,14 @@ export default function Home() {
             {SERVICES.map((service) => (
               <SingleService key={service.id} service={service} />
             ))}
+          </div>
+
+          <div className="flex justify-center mt-10">
+            <Button
+              label="More Services"
+              link={true}
+              url="/services"
+            />
           </div>
         </div>
       </section>

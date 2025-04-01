@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 import SectionTitle from "@/components/Common/SectionTitle";
 import Image from "next/image";
+import { Globe } from "@/components/magicui/globe";
 
 export const metadata: Metadata = {
   title: "About Page | ELLVATION",
@@ -29,10 +30,32 @@ const AboutPage = () => {
 
   return (
     <>
-      <Breadcrumb
-        pageName="About Us"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-      />
+
+      <section id="services-hero" className="relative pt-[120px] pb-16">
+        <div className="container">
+          <div className="flex">
+            <div className="w-6/12">
+              <h1 className="title">Your Innovation Partner, Building the Future of Your Digital Products</h1>
+
+              <p className="text-gray-400">
+                We specialize in the complete lifecycle of product development,
+                employing cutting-edge technologies and adaptable processes to
+                forge groundbreaking digital solutions. Our approach centers on
+                converting conceptual ideas into robust, market-viable products,
+                enabling businesses to gain a distinct competitive edge and
+                achieve rapid expansion.
+              </p>
+            </div>
+            <div className="w-6/12 relative">
+
+              <div className="size-full">
+                <Globe className="" />
+                {/*<div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />*/}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="about" className="pt-16 md:pt-20 lg:pt-28">
         <div className="container">
