@@ -10,20 +10,20 @@ const Hero = () => {
         <div className="container">
           <div className="flex flex-wrap items-start">
             <div className="w-8/12">
-              <h1 className="title">
-                Think Beyond.<br />Build Beyond.
-              </h1>
-              <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                From concept to code, PARALOGIK helps you turn bold ideas into powerful digital products.
-              </p>
-              <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                <Link
-                  href="/"
-                  className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                >
-                  Let’s Build Together
-                </Link>
-              </div>
+                <h1 className="title">
+                  Think Beyond.<br />Build Beyond.
+                </h1>
+                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                  From concept to code, PARALOGIK helps you turn bold ideas into powerful digital products.
+                </p>
+                <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                  <Link
+                    href="/"
+                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                  >
+                    Let’s Build Together
+                  </Link>
+                </div>
             </div>
             <div className="w-4/12">
               {/*<div style={{ width: '100%', height: '100%', position: 'relative' }}>

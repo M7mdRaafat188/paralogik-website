@@ -83,7 +83,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  We merge innovation, strategy, and smart engineering to help businesses break limits and build what's next.
+                  We merge innovation, strategy, and smart engineering to help businesses break limits and build what&apos;s next.
                 </p>
 
                 <div className="flex gap-4 items-center">
